@@ -1,4 +1,4 @@
-let res = ['_','_','_','_','_','_','_','_','_'];
+let res = ['_','_','_','_','_','_','_','_'];
 let quantity = localStorage.getItem('quantity');
 let name = localStorage.getItem("alias");
 let combinations = false;
