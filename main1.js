@@ -1,4 +1,4 @@
-let res = ['_','_','_','_','_','_','_','_','_'];
+let res = ['_','_','_','_','_','_','_','_'];
 let quantity = localStorage.getItem('quantity');
 let name = localStorage.getItem("alias");
 let combinations = false;
@@ -132,7 +132,7 @@ function deleteall(){
 }
 
 function clean(){
-    res = ['_','_','_','_','_','_','_','_','_']
+    res = ['_','_','_','_','_','_','_','_']
     let container = document.getElementById("text");
     container.innerHTML = res.join("\xa0\xa0");
     spans = document.querySelectorAll(".quiniela span");
