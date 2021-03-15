@@ -231,7 +231,7 @@ function costoactual(){
         for (var i=0;i<9;i++){
              aux2*= res[i].length;
         }
-        document.getElementById("costo").innerHTML = "Costo: $" + aux2*25;
+        document.getElementById("costo").innerHTML = "Costo: $" + aux2*10;
         document.getElementById("numquinielas").innerHTML = aux2 + " Quiniela(s)"
     }
 }
@@ -259,7 +259,7 @@ function remove(){
         display.removeChild(display.lastElementChild);
 
         document.querySelector('.botonenviar span').textContent = quantity;
-        document.getElementById("total").innerHTML = "Total: $" + quantity*25 +"\n";
+        document.getElementById("total").innerHTML = "Total: $" + quantity*10 +"\n";
 
         localStorage.setItem('quantity', quantity);
 
