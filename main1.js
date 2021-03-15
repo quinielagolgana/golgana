@@ -23,7 +23,7 @@ function start(){
             else
                 break;
         }
-    document.getElementById("total").innerHTML = "Total: $" + quantity*25 +"\n";
+    document.getElementById("total").innerHTML = "Total: $" + quantity*10 +"\n";
     if (display.childElementCount > 0)
     display.lastElementChild.innerHTML += `<button id="undo" onclick="remove()"><ion-icon name="arrow-undo-outline"></ion-icon></button>`;
 }  
@@ -136,7 +136,7 @@ function clean(){
     let container = document.getElementById("text");
     container.innerHTML = res.join("\xa0\xa0");
     spans = document.querySelectorAll(".quiniela span");
-    for (var i=0; i<27;i++)
+    for (var i=0; i<24;i++)
         spans[i].style.backgroundColor = "";
     document.getElementById("costo").innerHTML = "Costo: $0";
     document.getElementById("numquinielas").innerHTML = "0 Quiniela(s)";
@@ -155,7 +155,7 @@ function updatedisplay(){
     else
         display.innerHTML += `<div>` +  res.join("\xa0\xa0") + "\xa0\xa0" + name + "*\xa0\xa0" + `</div>`;
 
-    document.getElementById("total").innerHTML = "Total: $" + quantity*25;
+    document.getElementById("total").innerHTML = "Total: $" + quantity*10;
 
     if (display.childElementCount > 0)
     display.lastElementChild.innerHTML += `<button id="undo" onclick="remove()"><ion-icon name="arrow-undo-outline"></ion-icon></button>`;
@@ -192,7 +192,7 @@ function allowcombination(){
 
 function calculate(){
     aux = 1;
-    for (var i=0;i<9;i++){
+    for (var i=0;i<8;i++){
         aux*= res[i].length;
     }
     quantity = localStorage.getItem("quantity");
@@ -210,7 +210,7 @@ function random(){
     clean();
     let container = document.getElementById("text");
     let partidos = document.getElementsByClassName("partido");
-    for (var i = 0; i < 9; i++){
+    for (var i = 0; i < 8; i++){
         var r = getRandomInt(0,2);
         partidos[i].getElementsByTagName("span")[r].style.backgroundColor = "rgb(250, 30, 30)";
         res[i] = ["L","E","V"][r];
@@ -228,7 +228,7 @@ function getRandomInt(min, max) {
 function costoactual(){
     if (true){
         let aux2 = 1;
-        for (var i=0;i<9;i++){
+        for (var i=0;i<8;i++){
              aux2*= res[i].length;
         }
         document.getElementById("costo").innerHTML = "Costo: $" + aux2*10;
@@ -248,7 +248,7 @@ function remove(){
         last [0] = last[0].split('\n').join('');
 
         let aux3 = 1;
-        for (var i=0;i<9;i++){
+        for (var i=0;i<8;i++){
             aux3*= last[i].length;
             }
         quantity -= aux3;
