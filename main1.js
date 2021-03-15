@@ -41,7 +41,7 @@ function selection(element){
             res[index] += element.id.slice(0,1);
             res[index] = res[index].split('_').join('');
         }
-        element.style.backgroundColor = "rgb(250, 30, 30)";
+        element.style.backgroundColor = "rgb(101, 191, 243)";
     }
     else{
         if(combinations){
