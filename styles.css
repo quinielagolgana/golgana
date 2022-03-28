@@ -7,7 +7,7 @@
 
 .quiniela{
     margin: auto;
-    background-image: url("https://scontent.fmex2-2.fna.fbcdn.net/v/t39.30808-6/277531729_516294913338338_2803946018842542551_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHHOdQNaYVzsfz1geOXr5dMWKJetLComUJYol60sKiZQohrdhVpQOuKyBWwEm2q8pfAP39M9i8mxTrkT-6eT6yQ&_nc_ohc=0dJVBmQexEwAX-VrFZN&_nc_ht=scontent.fmex2-2.fna&oh=00_AT8csJx-kcHapS-1TQ5ex97QhVWkO8ZEMwSDVC6YF4PA3A&oe=6246D580");
+    background-image: url("https://scontent.fmex2-2.fna.fbcdn.net/v/t39.30808-6/276242210_513849550249541_3390776330446980483_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFdm_ZTgQTsgR6u-GOSNUXbRQFP8Lr0KNJFAU_wuvQo0rVaFXGCGyqYgwcGN8iIa0SK_SGMeHq6TvhgALVeOAJJ&_nc_ohc=3R9e76YMqQgAX9KY4_j&_nc_ht=scontent.fmex2-2.fna&oh=00_AT9jcbzYFwid1Qx9XR7AYkx9q4rvqFKv5Zuc6jZvzOStwA&oe=62460C56");
     background-size: 100%;
     background-repeat: no-repeat;
     max-width: 400px;
@@ -73,7 +73,7 @@ body{
     max-width: 400px;
     margin: auto;
     background-color: rgb(6,12,37);
-    background-image: url("https://scontent.fmex1-1.fna.fbcdn.net/v/t1.6435-9/208936039_342831580684673_5349911308556824201_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=fl7-sLYJyAMAX-z8D9W&_nc_ht=scontent.fmex1-1.fna&oh=cc9f994a0bba1ba2dd927fd597e27036&oe=60E08CCE");
+    background-image: url("https://scontent.fmex1-1.fna.fbcdn.net/v/t1.6435-9/208936039_342831580684673_5349911308556824201_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeGJBHnQbjsPpRfzu5JSV4QQuAQu52xc8Zy4BC7nbFzxnIrGw1L0f2H8W2xXnkf_Wm44e2q2nkBMe0QIkK-6GMbX&_nc_ohc=43CZNEmFMlMAX812lUb&_nc_ht=scontent.fmex1-1.fna&oh=83375e384f9231ef88d5c697f181e233&oe=60E2870E");
     background-repeat: repeat-y;
     background-position: top;
 }
@@ -191,7 +191,7 @@ p{
 
 .display{
     border: solid black 2px;
-    width: 0%;
+    width: 100%;
     background-color: rgba(255, 255, 240, 0.356);
     border-radius: 5px;
     text-align: left;
@@ -224,4 +224,3 @@ h6{
     padding: 0 2px;
     border-radius: 3px;
 }
-
