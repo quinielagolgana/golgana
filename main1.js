@@ -210,7 +210,7 @@ function random(){
     clean();
     let container = document.getElementById("text");
     let partidos = document.getElementsByClassName("partido");
-    for (var i = 0; i < 10; i++){
+    for (var i = 0; i<10; i++){
         var r = getRandomInt(0,2);
         partidos[i].getElementsByTagName("span")[r].style.backgroundColor = "rgb(250, 30, 30)";
         res[i] = ["L","E","V"][r];
