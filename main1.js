@@ -23,7 +23,7 @@ function start(){
             else
                 break;
         }
-    document.getElementById("total").innerHTML = "Total: $" + quantity*10 +"\n";
+    document.getElementById("total").innerHTML = "Total: $" + quantity*15 +"\n";
     if (display.childElementCount > 0)
     display.lastElementChild.innerHTML += `<button id="undo" onclick="remove()"><ion-icon name="arrow-undo-outline"></ion-icon></button>`;
 }  
@@ -41,7 +41,7 @@ function selection(element){
             res[index] += element.id.slice(0,1);
             res[index] = res[index].split('_').join('');
         }
-        element.style.backgroundColor = "rgb(101, 191, 243)";
+        element.style.backgroundColor = "rgb(250, 30, 30)";
     }
     else{
         if(combinations){
@@ -100,8 +100,7 @@ function send(){
     let whatsapptext = res.join("%20%20")
     whatsapptext = encodeURI(localStorage.getItem("results"));
     whatsapptext = whatsapptext.split('*').join('%0D').replace(/#/g,"");
-    window.location.href = "http://wa.me/525620155275?text="+whatsapptext;} 
-
+    window.location.href = "https://wa.me/525620155275?text="+whatsapptext;}
 }
 
 function save(){
@@ -155,7 +154,7 @@ function updatedisplay(){
     else
         display.innerHTML += `<div>` +  res.join("\xa0\xa0") + "\xa0\xa0" + name + "*\xa0\xa0" + `</div>`;
 
-    document.getElementById("total").innerHTML = "Total: $" + quantity*10;
+    document.getElementById("total").innerHTML = "Total: $" + quantity*15;
 
     if (display.childElementCount > 0)
     display.lastElementChild.innerHTML += `<button id="undo" onclick="remove()"><ion-icon name="arrow-undo-outline"></ion-icon></button>`;
@@ -210,7 +209,7 @@ function random(){
     clean();
     let container = document.getElementById("text");
     let partidos = document.getElementsByClassName("partido");
-    for (var i = 0; i<10; i++){
+    for (var i = 0; i < 10; i++){
         var r = getRandomInt(0,2);
         partidos[i].getElementsByTagName("span")[r].style.backgroundColor = "rgb(250, 30, 30)";
         res[i] = ["L","E","V"][r];
@@ -231,7 +230,7 @@ function costoactual(){
         for (var i=0;i<10;i++){
              aux2*= res[i].length;
         }
-        document.getElementById("costo").innerHTML = "Costo: $" + aux2*10;
+        document.getElementById("costo").innerHTML = "Costo: $" + aux2*15;
         document.getElementById("numquinielas").innerHTML = aux2 + " Quiniela(s)"
     }
 }
@@ -259,7 +258,7 @@ function remove(){
         display.removeChild(display.lastElementChild);
 
         document.querySelector('.botonenviar span').textContent = quantity;
-        document.getElementById("total").innerHTML = "Total: $" + quantity*10 +"\n";
+        document.getElementById("total").innerHTML = "Total: $" + quantity*15 +"\n";
 
         localStorage.setItem('quantity', quantity);
 
@@ -273,11 +272,6 @@ function removeLastLine(){
     if(x.lastIndexOf("\n")>0) {
         return x.substring(0, x.lastIndexOf("\n"));
     } else {
-        return x;
-    }
-}
-
-window.addEventListener("load",start,false);
         return x;
     }
 }
